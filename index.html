@@ -357,16 +357,46 @@
                             </div><!-- /.video-one__summery -->
                             <ul class="list-unstyled video-one__list">
                                 <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    Nsectetur cing elit.
+                                    <span class="dropdown-toggle" onclick="toggleDropdown(this)">Step 1: Learn About Us:</span>
+                                    <p class="dropdown-content">
+                                        Before applying for membership, we encourage you to learn more about 
+                                        Oyo State Ejawa Our Fish Multipurpose Cooperative Society and what we
+                                        stand for. Explore our website, attend informational events, and reach
+                                        out to current members to gain insights into our cooperative's mission,
+                                        values, and membership benefits.
+                                    </p>
                                 </li>
                                 <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    Suspe ndisse suscipit sagittis leo.
+                                    <span class="dropdown-toggle" onclick="toggleDropdown(this)">Review Membership Criteria</span>
+                                    <p class="dropdown-content">
+                                        Ensure that you meet the eligibility criteria for membership at Oyo State Ejawa Our Fish Multipurpose Cooperative Society. Our cooperative is open to individuals and businesses from various backgrounds and industries.
+
+                                    </p>
                                 </li>
                                 <li>
-                                    <i class="fa fa-check-circle"></i>
-                                    Entum estibulum dignissim posuere.
+                                    <span class="dropdown-toggle" onclick="toggleDropdown(this)">Complete Membership Application</span>
+                                    <p class="dropdown-content">
+                                        Once you're ready to join, complete our membership application form. Fill the application form from our website, office, or membership coordinator. Provide accurate and complete information about yourself or your business, including contact details, relevant experience, and any supporting documentation required.
+                                    </p>
+                                </li>
+                                <!-- Add more dropdowns here -->
+                                <li>
+                                    <span class="dropdown-toggle" onclick="toggleDropdown(this)">Submit Application and Fees</span>
+                                    <p class="dropdown-content">
+                                        Submit your completed membership application along with any required fees or dues. The application process may involve a one-time membership fee and your desire share capital. Be sure to review the application instructions carefully and include all necessary payments to expedite the process.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="dropdown-toggle" onclick="toggleDropdown(this)">Get Involved</span>
+                                    <p class="dropdown-content">
+                                        Congratulations! You're now a valued member of our cooperative community. Take advantage of the countless opportunities for networking, collaboration, and growth that come with membership. Get involved in committees, attend events, and contribute your skills and expertise to help advance our shared mission and goals.
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="dropdown-toggle" onclick="toggleDropdown(this)">Stay Connected</span>
+                                    <p class="dropdown-content">
+                                        Stay connected with Oyo State Ejawa Our Fish Multipurpose Cooperative Society and your fellow members by subscribing to our newsletter, following us on social media, and participating in online forums and discussions. Keep abreast of upcoming events, initiatives, and opportunities to maximize your membership experience and make the most of your cooperative journey.
+                                    </p>
                                 </li>
                             </ul><!-- /.list-unstyled -->
                             <div class="video-one__count-wrap">
@@ -374,7 +404,7 @@
                                     <i class="agrikon-icon-investment"></i>
                                     <div class="video-one__count-content">
                                         <h3><span class="odometer" data-count="870500">00</span></h3>
-                                        <p>Agriculture, Oragnic and Dairy Products</p>
+                                        <p>Agriculture, Organic and Dairy Products</p>
                                     </div><!-- /.video-one__count-content -->
                                 </div><!-- /.video-one__count -->
                             </div><!-- /.video-one__count-wrap -->
@@ -1053,6 +1083,33 @@
 
     <!-- template js -->
     <script src="assets/js/theme.js"></script>
+
+    <script>
+        function toggleDropdown(element) {
+            var content = element.nextElementSibling; // Get the next sibling, which is the dropdown content
+            content.classList.toggle('show');
+        }
+    </script>
+    
+    <style>
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            color: black;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            z-index: 1;
+        }
+        .dropdown-content.show {
+            display: block;
+        }
+        .dropdown-toggle {
+            cursor: pointer;
+           
+        }
+    </style>
+    
 </body>
 
 
